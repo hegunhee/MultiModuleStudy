@@ -14,3 +14,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MultiModuleStudy"
 include (":app")
+include(":domain2")
