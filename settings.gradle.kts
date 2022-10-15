@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MultiModuleStudy"
-include ':app'
+include (":app")
