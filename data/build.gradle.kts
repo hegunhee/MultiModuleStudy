@@ -36,6 +36,13 @@ android {
 }
 
 dependencies {
+
     implementation(libs.bundles.hilt)
     kapt(libs.hilt.compiler)
+}
+kapt {
+    correctErrorTypes = true
+}
+hilt {
+    enableAggregatingTask = true
 }

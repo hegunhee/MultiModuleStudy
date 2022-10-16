@@ -1,13 +1,18 @@
 [versions]
 hilt = "2.44"
+viewmodelscope = "2.5.1"
 
 [libraries]
 hilt-android = {module = "com.google.dagger:hilt-android",version.ref= "hilt"}
 hilt-compiler = {module = "com.google.dagger:hilt-android-compiler",version.ref ="hilt"}
 
+lifecycle-viewmodel = {module ="androidx.lifecycle:lifecycle-viewmodel-ktx",version.ref = "viewmodelscope"}
+lifecycle-runtime = {module = "androidx.lifecycle:lifecycle-runtime-ktx",version.ref ="viewmodelscope"}
+
 
 [bundles]
 hilt = ["hilt-android"]
+viewmodel-lifecycle = ["lifecycle-viewmodel","lifecycle-runtime"]
 
 [plugins]
 hilt-android = {id = "dagger.hilt.android.plugin",version = "hilt"}

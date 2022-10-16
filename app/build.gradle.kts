@@ -46,6 +46,17 @@ dependencies {
     androidTestImplementation ("androidx.test.ext:junit:1.1.3")
     androidTestImplementation ("androidx.test.espresso:espresso-core:3.4.0")
 
+    implementation(libs.bundles.viewmodel.lifecycle)
+
+    implementation ("androidx.activity:activity-ktx:1.4.0")
+    implementation ("androidx.fragment:fragment-ktx:1.4.0")
+
     implementation(libs.bundles.hilt)
     kapt(libs.hilt.compiler)
+}
+kapt {
+    correctErrorTypes = true
+}
+hilt {
+    enableAggregatingTask = true
 }
