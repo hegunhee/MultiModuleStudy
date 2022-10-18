@@ -1,13 +1,37 @@
 [versions]
-hilt = "2.44"
+core = "1.7.0"
+appcompat = "1.5.1"
+material = "1.6.1"
+constraint = "2.1.4"
+junit = "4.13.2"
+ext-junit = "1.1.3"
+espresso = "3.4.0"
+
+activity = "1.4.0"
+fragment = "1.4.0"
+
 viewmodelscope = "2.5.1"
 
+hilt = "2.44"
+
 [libraries]
-hilt-android = {module = "com.google.dagger:hilt-android",version.ref= "hilt"}
-hilt-compiler = {module = "com.google.dagger:hilt-android-compiler",version.ref ="hilt"}
+core-ktx = {module = "androidx.core:core-ktx",version.ref = "core" }
+appcompat = {module = "androidx.appcompat:appcompat",version.ref = "appcompat"}
+material = {module = "com.google.android.material:material",version.ref = "material"}
+constraint = {module = "androidx.constraintlayout:constraintlayout",version.ref="constraint"}
+junit = {module = "junit:junit",version.ref="junit"}
+ext-junit = {module = "androidx.test.ext:junit",version.ref="ext-junit"}
+espresso = {module = "androidx.test.espresso:espresso-core",version.ref="espresso"}
+
+activity-ktx = {module = "androidx.activity:activity-ktx",version.ref="activity"}
+fragment-ktx = {module = "androidx.fragment:fragment-ktx",version.ref = "fragment"}
 
 lifecycle-viewmodel = {module ="androidx.lifecycle:lifecycle-viewmodel-ktx",version.ref = "viewmodelscope"}
 lifecycle-runtime = {module = "androidx.lifecycle:lifecycle-runtime-ktx",version.ref ="viewmodelscope"}
+
+hilt-android = {module = "com.google.dagger:hilt-android",version.ref= "hilt"}
+hilt-compiler = {module = "com.google.dagger:hilt-android-compiler",version.ref ="hilt"}
+
 
 
 [bundles]

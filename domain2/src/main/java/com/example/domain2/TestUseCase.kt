@@ -1,6 +1,6 @@
 package com.example.domain2
 
-import com.example.data.repository.TestRepository
+import com.example.domain2.repository.TestRepository
 import javax.inject.Inject
 
 class TestUseCase @Inject constructor(
